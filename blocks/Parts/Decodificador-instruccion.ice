@@ -252,7 +252,7 @@
           "id": "8060cb21-4792-4ee2-9333-0489db108ead",
           "type": "basic.info",
           "data": {
-            "info": "### Tabla de códigos de operación\n\n| Instrucción | Opcode (4 bits) | Descripción |\n|-------------|-----------------|-------------|\n| LDA         | 0x0             | Cargar dato en el registro A |\n| ADD         | 0x1             | Sumar dato al registro A     |\n| SUB         | 0x2             | Restar dato al registro A    |\n| OUT         | 0xE             | Transferir el registro A al registro OUT |\n| HLT         | 0xF             | Detener el procesador                    |\n",
+            "info": "### Tabla de códigos de operación\n\n| Instrucción | Opcode (4 bits) | Descripción  |\n|-------------|-----------------|-------------|\n| LDA         | 0x0             | Cargar dato en el registro A |\n| ADD         | 0x1             | Sumar dato al registro A     |\n| SUB         | 0x2             | Restar dato al registro A    |\n| OUT         | 0xE             | Transferir el registro A al registro OUT |\n| HLT         | 0xF             | Detener el procesador                    |\n",
             "readonly": true
           },
           "position": {
