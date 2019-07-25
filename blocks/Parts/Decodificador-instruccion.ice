@@ -181,7 +181,7 @@
           },
           "position": {
             "x": 248,
-            "y": 120
+            "y": 48
           },
           "size": {
             "width": 304,
@@ -256,12 +256,76 @@
             "readonly": true
           },
           "position": {
-            "x": 928,
-            "y": 192
+            "x": 944,
+            "y": 320
           },
           "size": {
             "width": 608,
             "height": 200
+          }
+        },
+        {
+          "id": "7cc20f09-6119-4cd0-b3e3-f3b06250cca2",
+          "type": "basic.info",
+          "data": {
+            "info": "Códigos de instrucción",
+            "readonly": true
+          },
+          "position": {
+            "x": 296,
+            "y": 152
+          },
+          "size": {
+            "width": 232,
+            "height": 32
+          }
+        },
+        {
+          "id": "31a64202-6940-445b-a51c-0210ea341128",
+          "type": "basic.info",
+          "data": {
+            "info": "**Comparadores**",
+            "readonly": true
+          },
+          "position": {
+            "x": 584,
+            "y": 648
+          },
+          "size": {
+            "width": 152,
+            "height": 40
+          }
+        },
+        {
+          "id": "9f1c409c-d899-4b1a-a095-f98b776366cc",
+          "type": "basic.info",
+          "data": {
+            "info": "**Salidas**: Sólo se activa una  \núnica señal por cada opcode  \n(o ninguna)",
+            "readonly": true
+          },
+          "position": {
+            "x": 752,
+            "y": 224
+          },
+          "size": {
+            "width": 264,
+            "height": 64
+          }
+        },
+        {
+          "id": "e9832eb8-5a9c-4edd-930b-1784cfae85b4",
+          "type": "basic.info",
+          "data": {
+            "info": "**Entrada**:  \nCódigo de instrucción",
+            "readonly": true
+          },
+          "position": {
+            "x": -104,
+            "y": 248
+          },
+          "size": {
+            "width": 192,
+            "height": 56
           }
         }
       ],
