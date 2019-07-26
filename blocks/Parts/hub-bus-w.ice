@@ -518,15 +518,15 @@
           "id": "d47d25a4-6836-4283-b9e4-b88cf967bfa7",
           "type": "basic.info",
           "data": {
-            "info": "Decodificador  \nde 8 a 3",
+            "info": "Codificador  \nde 8 a 3",
             "readonly": true
           },
           "position": {
-            "x": 600,
-            "y": 72
+            "x": 592,
+            "y": 56
           },
           "size": {
-            "width": 128,
+            "width": 120,
             "height": 48
           }
         },
@@ -591,6 +591,22 @@
           },
           "size": {
             "width": 152,
+            "height": 56
+          }
+        },
+        {
+          "id": "c4b0215d-ba30-4e08-b836-7301b50a8297",
+          "type": "basic.info",
+          "data": {
+            "info": "Número de slot de  \ndatos a seleccionar",
+            "readonly": true
+          },
+          "position": {
+            "x": 712,
+            "y": 192
+          },
+          "size": {
+            "width": 184,
             "height": 56
           }
         }
