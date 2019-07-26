@@ -264,7 +264,7 @@
           "id": "1fc90897-a7a1-449b-aa4c-abc33aeccb5e",
           "type": "basic.info",
           "data": {
-            "info": "### Ejemplo de programa para probar\n\n| Código máquina | Instrucción |\n|----------------|-------------|\n| 0x09           |  LDA 9      |\n| 0x1A           |  ADD 10     |\n| 0x1B           |  ADD 11     |\n| 0x2C           |  SUB 12     |\n| 0xE0           |  OUT        |\n| 0xF0           |  HLT        |",
+            "info": "### Ejemplo de programa para probar\n\n| Código máquina | Instrucción |\n|----------------|-------------|\n| 0x09           |  LDA 9      |\n| 0x1A           |  ADD 10     |\n| 0x1B           |  ADD 11     |\n| 0x2C           |  SUB 12     |\n| 0xE0           |  OUT        |\n| 0xF0           |  HLT        |\n| 0xA0           | Desconocida |",
             "readonly": true
           },
           "position": {
