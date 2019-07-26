@@ -65,7 +65,7 @@
             "virtual": false
           },
           "position": {
-            "x": 880,
+            "x": 936,
             "y": -40
           }
         },
@@ -164,16 +164,16 @@
           "id": "613441c7-a8ef-4a62-8974-c14214378a63",
           "type": "basic.info",
           "data": {
-            "info": "### Tabla de microórdenes\n\n| Nombre     | Descripción                             | \n|------------|-----------------------------------------|\n| CP         | Incrementar el PC en 1                  | \n| EP         | Sacar el contador de programa PC al Bus | \n| LM#        | Cargar dato del bus en registro MAR     | \n| CE#        | Sacar la salida de la memoria al Bus    | \n| LI#        | Cargar el dato del bus en el registro de Instrucción |\n| EI#        | Sacar el registro de instrucción al Bus | \n| LA#        | Cargar dato del bus en registro A       |   \n| EA         | Sacar el registro A al Bus              | \n| SU         | Seleccionar operación de resta          | \n| EU         | Sacar el resultado de la Alu por el Bus |  \n| LB#        | Cargar dato del bus en registro B       | \n| LO#        | Cargar dato del bus en registro OUT     | \n\n",
+            "info": "### Tabla de microinstrucciones\n\n\n|Instrucción| Estado | Microinstrucción | Microórdenes activas |\n|-----------|--------|------------------|----------------------|\n| Fetch     |  T1    |  0x5E3           |  EP y LM#         |\n| Fetch     |  T2    |  0xBE3           |  CP               |\n| Fetch     |  T3    |  0x263           |  CE# y LI#        |\n|-----------|\n| LDA       |   T4   |  0x1A3           | LM# y EI#            |\n| LDA       |   T5   |  0x2C3           | CE# y LA#            |\n| LDA       |   T6   |  0x3E3           | Ninguna              |\n|-----------|\n| ADD       |   T4   |  0x1A3           | LM# y EI#            |\n| ADD       |   T5   |  0x2E1           | CE# y LB#            |\n| ADD       |   T6   |  0x3C7           | LA# y EU#            |\n|-----------|\n| SUB       |   T4   | 0x1A3            | LM# y EI#            |\n| SUB       |   T5   | 0x2E1            | CE# y LB#            |\n| SUB       |   T6   | 0x3CF            | LA#, SU y EU         |\n|-----------|\n| OUT       |   T4   | 0x3F2            | EA y LO#             |\n| OUT       |   T5   | 0x3E3            | Ninguna              |\n| OUT       |   T6   | 0x3E3            | Ninguna              |\n",
             "readonly": true
           },
           "position": {
-            "x": 1056,
-            "y": -304
+            "x": 1104,
+            "y": -224
           },
           "size": {
-            "width": 520,
-            "height": 256
+            "width": 528,
+            "height": 392
           }
         },
         {
@@ -280,7 +280,7 @@
           "id": "f44d306a-6225-42b0-92d6-ada4d45c00f9",
           "type": "056cb0518fdc1cbba96f329e057ab486b7a38355",
           "position": {
-            "x": 704,
+            "x": 760,
             "y": -24
           },
           "size": {
@@ -310,6 +310,86 @@
           "size": {
             "width": 96,
             "height": 384
+          }
+        },
+        {
+          "id": "099e9758-d843-4bac-9c46-c696bb43a4b6",
+          "type": "basic.info",
+          "data": {
+            "info": "Transmisión de la microinstrucción  \nde 16 bits",
+            "readonly": true
+          },
+          "position": {
+            "x": 776,
+            "y": -96
+          },
+          "size": {
+            "width": 280,
+            "height": 48
+          }
+        },
+        {
+          "id": "2df6b50c-f375-4cde-a4a4-793190bdbd90",
+          "type": "basic.info",
+          "data": {
+            "info": "Generar un tic por cada flanco  \nde subida del reloj",
+            "readonly": true
+          },
+          "position": {
+            "x": -8,
+            "y": -248
+          },
+          "size": {
+            "width": 256,
+            "height": 56
+          }
+        },
+        {
+          "id": "cfb59c4a-65a0-4f9d-bf32-79c01e5378c7",
+          "type": "basic.info",
+          "data": {
+            "info": "La Microinstrucción se envía  \nen cada flanco de subida  \ndel reloj",
+            "readonly": true
+          },
+          "position": {
+            "x": 632,
+            "y": 128
+          },
+          "size": {
+            "width": 264,
+            "height": 64
+          }
+        },
+        {
+          "id": "57caf440-2574-4697-9a18-4742d064ed87",
+          "type": "basic.info",
+          "data": {
+            "info": "Microinstrucción ampliada: se  \nañaden ceros en los 4 bits  \nde mayor peso",
+            "readonly": true
+          },
+          "position": {
+            "x": 504,
+            "y": -88
+          },
+          "size": {
+            "width": 232,
+            "height": 64
+          }
+        },
+        {
+          "id": "8c16e1cc-02fe-4781-840c-e561bafef1e7",
+          "type": "basic.info",
+          "data": {
+            "info": "# Matriz de control. Ejemplo 2: Microinstrucciones serie\n\nPrueba de funcionamiento del bloque de la matriz de control. Se envían por  \nel **puerto serie** todas las micrinstrucciones correspondientes a una  \ninstrucción. De esta forma podemos compararlas con las de la tabla para  \nverificar que la matriz de control las ha generado correctamente",
+            "readonly": true
+          },
+          "position": {
+            "x": -576,
+            "y": -512
+          },
+          "size": {
+            "width": 600,
+            "height": 120
           }
         }
       ],
@@ -13746,6 +13826,94 @@
               "target": {
                 "block": "7cafb6f9-27e6-436d-ac32-643ad8915e28",
                 "port": "inlabel"
+              }
+            },
+            {
+              "tcTodelete": true,
+              "source": {
+                "block": "252c8379-aa85-4ef1-8396-a29e8ee9a55f",
+                "port": "out"
+              },
+              "target": {
+                "block": "4b887b36-0229-42dc-840b-2de986bf968c",
+                "port": "inlabel"
+              }
+            },
+            {
+              "tcTodelete": true,
+              "source": {
+                "block": "b5dffb68-177b-4366-8bb1-ab6d0eed05df",
+                "port": "out"
+              },
+              "target": {
+                "block": "31bdc9af-efa8-46e4-8ff9-84aa76b9ec40",
+                "port": "inlabel"
+              }
+            },
+            {
+              "tcTodelete": true,
+              "source": {
+                "block": "98c2e52a-fb93-4378-83e9-d2b1e5c1d36f",
+                "port": "outlabel"
+              },
+              "target": {
+                "block": "783fb7a9-d833-4a41-a0bd-50009577de12",
+                "port": "in"
+              }
+            },
+            {
+              "tcTodelete": true,
+              "source": {
+                "block": "f95ecaa4-0b81-4a67-868a-608910f45f4a",
+                "port": "outlabel"
+              },
+              "target": {
+                "block": "fef5feb4-4864-4c8f-ab26-113979c3c9ef",
+                "port": "in"
+              }
+            },
+            {
+              "tcTodelete": true,
+              "source": {
+                "block": "252c8379-aa85-4ef1-8396-a29e8ee9a55f",
+                "port": "out"
+              },
+              "target": {
+                "block": "4b887b36-0229-42dc-840b-2de986bf968c",
+                "port": "inlabel"
+              }
+            },
+            {
+              "tcTodelete": true,
+              "source": {
+                "block": "b5dffb68-177b-4366-8bb1-ab6d0eed05df",
+                "port": "out"
+              },
+              "target": {
+                "block": "31bdc9af-efa8-46e4-8ff9-84aa76b9ec40",
+                "port": "inlabel"
+              }
+            },
+            {
+              "tcTodelete": true,
+              "source": {
+                "block": "98c2e52a-fb93-4378-83e9-d2b1e5c1d36f",
+                "port": "outlabel"
+              },
+              "target": {
+                "block": "783fb7a9-d833-4a41-a0bd-50009577de12",
+                "port": "in"
+              }
+            },
+            {
+              "tcTodelete": true,
+              "source": {
+                "block": "f95ecaa4-0b81-4a67-868a-608910f45f4a",
+                "port": "outlabel"
+              },
+              "target": {
+                "block": "fef5feb4-4864-4c8f-ab26-113979c3c9ef",
+                "port": "in"
               }
             },
             {
