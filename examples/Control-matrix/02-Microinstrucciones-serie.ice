@@ -94,7 +94,7 @@
           "id": "a782ef70-1ca4-4b29-aacc-ebf03c659a6e",
           "type": "basic.input",
           "data": {
-            "name": "clk#",
+            "name": "Botón",
             "pins": [
               {
                 "index": "0",
@@ -115,7 +115,7 @@
           "type": "basic.constant",
           "data": {
             "name": "",
-            "value": "'hE",
+            "value": "'h0",
             "local": false
           },
           "position": {
@@ -390,6 +390,54 @@
           "size": {
             "width": 600,
             "height": 120
+          }
+        },
+        {
+          "id": "be258215-d458-430c-9bc8-1a36eeeed237",
+          "type": "basic.info",
+          "data": {
+            "info": "Al apretar el pulsador  \nse genera un ciclo de  \ninstrucción",
+            "readonly": true
+          },
+          "position": {
+            "x": -608,
+            "y": 96
+          },
+          "size": {
+            "width": 232,
+            "height": 64
+          }
+        },
+        {
+          "id": "072a72fa-517f-4c1d-a0fb-6e17934e3fed",
+          "type": "basic.info",
+          "data": {
+            "info": "Instrucción: LDA",
+            "readonly": true
+          },
+          "position": {
+            "x": -512,
+            "y": 352
+          },
+          "size": {
+            "width": 184,
+            "height": 40
+          }
+        },
+        {
+          "id": "6591e3ec-39ef-4b7d-9147-94c91394b704",
+          "type": "basic.info",
+          "data": {
+            "info": "Modificar este valor para  \ncomprobar el resto de instrucciones",
+            "readonly": true
+          },
+          "position": {
+            "x": -576,
+            "y": 544
+          },
+          "size": {
+            "width": 288,
+            "height": 56
           }
         }
       ],
@@ -13826,6 +13874,50 @@
               "target": {
                 "block": "7cafb6f9-27e6-436d-ac32-643ad8915e28",
                 "port": "inlabel"
+              }
+            },
+            {
+              "tcTodelete": true,
+              "source": {
+                "block": "252c8379-aa85-4ef1-8396-a29e8ee9a55f",
+                "port": "out"
+              },
+              "target": {
+                "block": "4b887b36-0229-42dc-840b-2de986bf968c",
+                "port": "inlabel"
+              }
+            },
+            {
+              "tcTodelete": true,
+              "source": {
+                "block": "b5dffb68-177b-4366-8bb1-ab6d0eed05df",
+                "port": "out"
+              },
+              "target": {
+                "block": "31bdc9af-efa8-46e4-8ff9-84aa76b9ec40",
+                "port": "inlabel"
+              }
+            },
+            {
+              "tcTodelete": true,
+              "source": {
+                "block": "98c2e52a-fb93-4378-83e9-d2b1e5c1d36f",
+                "port": "outlabel"
+              },
+              "target": {
+                "block": "783fb7a9-d833-4a41-a0bd-50009577de12",
+                "port": "in"
+              }
+            },
+            {
+              "tcTodelete": true,
+              "source": {
+                "block": "f95ecaa4-0b81-4a67-868a-608910f45f4a",
+                "port": "outlabel"
+              },
+              "target": {
+                "block": "fef5feb4-4864-4c8f-ab26-113979c3c9ef",
+                "port": "in"
               }
             },
             {
