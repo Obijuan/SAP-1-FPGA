@@ -167,7 +167,7 @@
           "id": "a782ef70-1ca4-4b29-aacc-ebf03c659a6e",
           "type": "basic.input",
           "data": {
-            "name": "clk#",
+            "name": "Botón",
             "pins": [
               {
                 "index": "0",
@@ -426,6 +426,22 @@
           "size": {
             "width": 184,
             "height": 40
+          }
+        },
+        {
+          "id": "b3197c88-6d07-4b89-a4e4-359f0227bb3a",
+          "type": "basic.info",
+          "data": {
+            "info": "Al apretar el pulsador  \nse genera un ciclo de  \ninstrucción",
+            "readonly": true
+          },
+          "position": {
+            "x": -600,
+            "y": 112
+          },
+          "size": {
+            "width": 232,
+            "height": 64
           }
         }
       ],
