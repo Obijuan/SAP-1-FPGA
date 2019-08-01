@@ -263,7 +263,7 @@
           "id": "bd2d3436-81c0-4f66-a3ac-9367229e67c5",
           "type": "basic.info",
           "data": {
-            "info": "Calcular el complemente  \na 2 del operando B  ",
+            "info": "Calcular el complemento  \na 2 del operando B  ",
             "readonly": true
           },
           "position": {
