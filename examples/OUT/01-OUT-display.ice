@@ -1811,11 +1811,11 @@
           },
           "position": {
             "x": -96,
-            "y": -248
+            "y": -264
           },
           "size": {
             "width": 240,
-            "height": 216
+            "height": 232
           }
         },
         {
@@ -1898,7 +1898,7 @@
           "id": "c5417df6-435c-48f7-9c8d-213005c61426",
           "type": "basic.info",
           "data": {
-            "info": "# OUT. Ejemplo 1: Visualización en display\n\nEjemplo de prueba del puerto de salida (OUT). El programa  \nde prueba usa todas las instrucciones. Con la última se saca  \nel registro A por el puerto de salida, conectado  \nal display SPI. La operación que se realiza es:  \n16 + 20 + 24 - 32 = 28 (0x1C) \nAl apretar el pulsador la quinta vez se muestra el resultado  \nen el display (0x1C). En los LEDs se muestra el PC",
+            "info": "# OUT. Ejemplo 1: Visualización en display\n\nEjemplo de prueba del puerto de salida (OUT). El programa  \nde prueba usa todas las instrucciones. Con la última se saca  \nel registro A por el puerto de salida, conectado  \nal display SPI. La operación que se realiza es:  \n16 + 20 + 24 - 32 = 28 (0x1C)  \nTodos los resultados intermedios se muestran en el display. El  \núltimo es el final: 1C. En los LEDs se muestra el PC",
             "readonly": true
           },
           "position": {
@@ -1906,8 +1906,8 @@
             "y": -472
           },
           "size": {
-            "width": 472,
-            "height": 160
+            "width": 480,
+            "height": 152
           }
         },
         {
@@ -2122,8 +2122,8 @@
             "readonly": true
           },
           "position": {
-            "x": -120,
-            "y": -360
+            "x": -224,
+            "y": -368
           },
           "size": {
             "width": 408,
@@ -2490,8 +2490,8 @@
             "readonly": true
           },
           "position": {
-            "x": 896,
-            "y": -104
+            "x": 888,
+            "y": -168
           },
           "size": {
             "width": 168,
@@ -19449,6 +19449,50 @@
               "target": {
                 "block": "7cafb6f9-27e6-436d-ac32-643ad8915e28",
                 "port": "inlabel"
+              }
+            },
+            {
+              "tcTodelete": true,
+              "source": {
+                "block": "252c8379-aa85-4ef1-8396-a29e8ee9a55f",
+                "port": "out"
+              },
+              "target": {
+                "block": "4b887b36-0229-42dc-840b-2de986bf968c",
+                "port": "inlabel"
+              }
+            },
+            {
+              "tcTodelete": true,
+              "source": {
+                "block": "b5dffb68-177b-4366-8bb1-ab6d0eed05df",
+                "port": "out"
+              },
+              "target": {
+                "block": "31bdc9af-efa8-46e4-8ff9-84aa76b9ec40",
+                "port": "inlabel"
+              }
+            },
+            {
+              "tcTodelete": true,
+              "source": {
+                "block": "98c2e52a-fb93-4378-83e9-d2b1e5c1d36f",
+                "port": "outlabel"
+              },
+              "target": {
+                "block": "783fb7a9-d833-4a41-a0bd-50009577de12",
+                "port": "in"
+              }
+            },
+            {
+              "tcTodelete": true,
+              "source": {
+                "block": "f95ecaa4-0b81-4a67-868a-608910f45f4a",
+                "port": "outlabel"
+              },
+              "target": {
+                "block": "fef5feb4-4864-4c8f-ab26-113979c3c9ef",
+                "port": "in"
               }
             },
             {
