@@ -227,7 +227,7 @@
           "id": "274f0c3b-9232-4650-abe5-07422e4b51b6",
           "type": "basic.output",
           "data": {
-            "name": "changed",
+            "name": "out",
             "pins": [
               {
                 "index": "0",
@@ -270,7 +270,7 @@
           "id": "9761a3ba-2df2-44bd-8c22-ffc72db6cc33",
           "type": "basic.info",
           "data": {
-            "info": "Registro B",
+            "info": "Registro OUT",
             "readonly": true
           },
           "position": {
@@ -314,12 +314,12 @@
           "id": "147b96fc-9aa0-4542-8837-46d778fc915f",
           "type": "basic.info",
           "data": {
-            "info": "Valor del Registro B",
+            "info": "Valor de salida",
             "readonly": true
           },
           "position": {
             "x": 2040,
-            "y": -624
+            "y": -632
           },
           "size": {
             "width": 168,
@@ -386,12 +386,12 @@
           "id": "13417669-9111-4d13-9f94-4b72aaac6556",
           "type": "basic.info",
           "data": {
-            "info": "Depuración: se emite un tic cada  \nvez que se carga un valor nuevo  \nen el registro. Esto permite  \nconectarlo fácilmente a un display",
+            "info": "Depuración: se emite un tic cada  \nvez que se saca un valor por  \nel puerto (Ejecución de la  \ninstrucción OUT)",
             "readonly": true
           },
           "position": {
-            "x": 2040,
-            "y": -488
+            "x": 2056,
+            "y": -472
           },
           "size": {
             "width": 280,
