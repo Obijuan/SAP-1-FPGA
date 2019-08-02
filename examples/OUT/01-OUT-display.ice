@@ -2649,6 +2649,22 @@
             "width": 96,
             "height": 128
           }
+        },
+        {
+          "id": "35b60671-2499-470e-9b45-f98ee04c82ac",
+          "type": "basic.info",
+          "data": {
+            "info": "Al BUS W",
+            "readonly": true
+          },
+          "position": {
+            "x": 920,
+            "y": -544
+          },
+          "size": {
+            "width": 104,
+            "height": 40
+          }
         }
       ],
       "wires": [
@@ -19449,6 +19465,50 @@
               "target": {
                 "block": "7cafb6f9-27e6-436d-ac32-643ad8915e28",
                 "port": "inlabel"
+              }
+            },
+            {
+              "tcTodelete": true,
+              "source": {
+                "block": "252c8379-aa85-4ef1-8396-a29e8ee9a55f",
+                "port": "out"
+              },
+              "target": {
+                "block": "4b887b36-0229-42dc-840b-2de986bf968c",
+                "port": "inlabel"
+              }
+            },
+            {
+              "tcTodelete": true,
+              "source": {
+                "block": "b5dffb68-177b-4366-8bb1-ab6d0eed05df",
+                "port": "out"
+              },
+              "target": {
+                "block": "31bdc9af-efa8-46e4-8ff9-84aa76b9ec40",
+                "port": "inlabel"
+              }
+            },
+            {
+              "tcTodelete": true,
+              "source": {
+                "block": "98c2e52a-fb93-4378-83e9-d2b1e5c1d36f",
+                "port": "outlabel"
+              },
+              "target": {
+                "block": "783fb7a9-d833-4a41-a0bd-50009577de12",
+                "port": "in"
+              }
+            },
+            {
+              "tcTodelete": true,
+              "source": {
+                "block": "f95ecaa4-0b81-4a67-868a-608910f45f4a",
+                "port": "outlabel"
+              },
+              "target": {
+                "block": "fef5feb4-4864-4c8f-ab26-113979c3c9ef",
+                "port": "in"
               }
             },
             {
